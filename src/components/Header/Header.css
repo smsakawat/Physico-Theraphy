@@ -1,0 +1,15 @@
+.title-contianer {
+  background-color: #f9fafb;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  height: 100px;
+}
+.contact-container {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .navbar-shadow {
+  box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.2);
+} */

@@ -1,13 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.primary-color {
+  color: #9c27b0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.text-color {
+  color: #66c1e8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* site responsive using media query */
+@media (max-width: 688px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .advantages {
+    flex-direction: column;
+  }
+  .footer-title {
+    display: none;
+  }
+  .footer-middle {
+    flex-direction: column;
+  }
+  .footer-last {
+    flex-direction: column;
+  }
+  .footer-about {
+    margin-top: 30px;
+  }
+  .footer-services {
+    margin-top: 40px;
+  }
+  .form-container {
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+  }
+  .loginform-container {
+    margin-top: 50px;
+    width: 90%;
+    height: 94%;
+  }
+  .bookform-container {
+    margin-top: 50px;
+    width: 80%;
+    height: 100%;
+  }
 }

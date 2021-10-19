@@ -1,0 +1,36 @@
+.slider-one {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+    url("../../images/banner6.png");
+  background-position: center top;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-two {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+    url("../../images/banner2.png");
+  background-position: center top;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-three {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+    url("../../images/banner5.png");
+  background-position: center top;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-four {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+    url("../../images/banner1.png");
+  background-position: center top;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,8 @@
+.about-header {
+  background-color: #f5f8fb;
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

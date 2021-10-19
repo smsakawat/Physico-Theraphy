@@ -1,0 +1,15 @@
+.details-header {
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../images//banner5.png");
+  background-position: center top;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
