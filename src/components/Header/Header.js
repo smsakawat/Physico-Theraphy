@@ -8,6 +8,7 @@ import { Button, Typography } from "@mui/material";
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 
@@ -146,6 +147,13 @@ const Header = () => {
                 to="/booking"
               >
                 Book Now
+              </Nav.Link>
+              <Nav.Link
+                style={{ fontWeight: "bold", paddingRight: 25 }}
+                as={HashLink}
+                to="/home#services"
+              >
+                Services
               </Nav.Link>
 
               <Navbar.Text style={{ margin: "0 10px" }}>
