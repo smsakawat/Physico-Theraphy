@@ -7,6 +7,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Signup from "./components/Sign Up/Signup";
 import AuthProvider from "./Context/AuthProvider";
 import About from "./pages/About/About";
+import Blogs from "./pages/Blogs/Blogs";
 import Home from "./pages/Home/Home.";
 import NotFound from "./pages/NotFound/NotFound";
 import ServiceDetail from "./pages/ServiceDetail/ServiceDetail";
@@ -22,11 +23,14 @@ function App() {
           <Route exact path="/home">
             <Home />
           </Route>
-          <PrivateRoute exact path="/about">
+          <Route exact path="/about">
             <About />
-          </PrivateRoute>
+          </Route>
           <PrivateRoute exact path="/booking">
             <BookAppointment />
+          </PrivateRoute>
+          <PrivateRoute path="/blogs">
+            <Blogs />
           </PrivateRoute>
           <Route exact path="/signup">
             <Signup />

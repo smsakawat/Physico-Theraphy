@@ -141,6 +141,14 @@ const Header = () => {
               >
                 About Us
               </Nav.Link>
+
+              <Nav.Link
+                style={{ fontWeight: "bold", paddingRight: 25 }}
+                as={Link}
+                to="/blogs"
+              >
+                Blogs
+              </Nav.Link>
               <Nav.Link
                 style={{ fontWeight: "bold", paddingRight: 25 }}
                 as={Link}
