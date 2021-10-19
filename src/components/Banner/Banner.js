@@ -60,7 +60,7 @@ const Banner = () => {
             size="large"
             style={{ marginTop: 20 }}
           >
-            Therapy Services
+            Contact Now
           </Button>
         </div>
       </Carousel.Item>
