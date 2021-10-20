@@ -4,41 +4,42 @@
     "title": "Physical Therapy",
     "category": "physical",
     "description": "Physical therapy is one of the major services which we offer. Our therapists works closely with patients to help them improve their movement potential and gain a healthier and more...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_03.jpg"
+    "img": "https://i.ibb.co/5Md0g0c/physical-1.png"
   },
   {
     "id": "2",
     "title": "Chiropractic Therapy",
     "category": "chiropractic therapy",
     "description": "We are one of the most advanced chiropractic clinics and carry the latest chiropractic equipment which helps our doctors diagnose and treat back pains, spinal problems, neck pains and...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_02.jpg"
+    "img": "https://image.freepik.com/free-photo/close-up-physiotherapist-working-with-patient-clinic_1150-15061.jpg"
   },
   {
     "id": "3",
     "title": "Clinical Pilates",
     "category": "clinical Pilates",
-    "description": "We are one of the most advanced chiropractic clinics and carry the latest chiropractic equipment which helps our doctors diagnose and treat back pains, spinal problems, neck pains and...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_14.jpg"
+    "description": "Every person’s biomechanics and movement patterning are all slightly different. All sports and work require different skills and muscle activation..",
+    "img": "https://image.freepik.com/free-photo/cropped-photo-young-shirtless-afro-american-man-with-shoulder-pain_171337-9259.jpg"
   },
+
   {
     "id": "4",
     "title": "Massage Therapy",
     "category": "massage therapy",
     "description": "We are one of the most advanced chiropractic clinics and carry the latest chiropractic equipment which helps our doctors diagnose and treat back pains, spinal problems, neck pains and...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_06.jpg"
+    "img": "https://i.ibb.co/VgP21Tg/clinical-1.png"
   },
   {
     "id": "5",
     "title": "Work Injuries",
     "category": "work injuries",
     "description": "If an injury at work has impeded your performance in the workplace, our work injury rehabilitation program provides an aggressive yet cautious approach to getting you back to work quickly...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_08.jpg"
+    "img": "https://i.ibb.co/Wsddcv5/work.jpg"
   },
   {
     "id": "6",
     "title": "Sport Injuries",
     "category": "sport injuries",
-    "description": "We are dedicated to sports medicine and focus our rehabilitation on the performance needs of our athletes as well as the prevention of sports-related injuries. Whether you are a professional,...",
-    "img": "https://demos.qreativethemes.com/physio/wp-content/uploads/sites/3/2015/12/physio_07.jpg"
+    "description": "We are dedicated to sports medicine and focus our rehabilitation on the performance needs of our athletes as well as the prevention of sports-related injuries....",
+    "img": "https://i.ibb.co/YtGg5sk/sports-1.png"
   }
 ]

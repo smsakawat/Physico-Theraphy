@@ -1,22 +1,98 @@
-#title:hover {
-  color: #66c1e8;
+:root {
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: rgb(252, 245, 245);
+  --clr-accent-400: #951daa;
 }
-.single-service {
-  transition: all 0.3s ease-in-out;
-}
-.single-service:hover {
-  transform: translateY(-14px);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.img-div {
+.card-div {
+  filter: brightness(90%);
+  color: #fff;
+  padding: 10rem 0 0;
+  max-width: 45ch;
+  border-radius: 0.3em;
   overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.card-div:hover,
+.card-div:focus-within {
+  transform: scale(1.04);
+}
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    /* so here it starts the fading and then after 20%  */ rgba(0, 0, 0, 0.4)
+      20%,
+    rgba(0, 0, 0, 1)
+  );
+  transform: translateY(66%);
+  transition: transform 0.5s ease;
+}
+
+.card-div:hover .card-content,
+.card-div:focus-within .card-content {
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+.card-div:focus-within .card-content {
+  transition-duration: 0ms;
+}
+/* selecting card contents elements without the card-title */
+/* akhen '*'  aita dia card elements er sob elements select korteci but :not dia card-title k baad rakhteci and universal selector ar not er majkhane gap takhte parbe na*/
+.card-content > *:not(.card-heading) {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+/* we used focus-within whenever we hover to fix the tab bug and yeah it's fixed */
+/* showing elements on hover */
+.card-div:hover .card-content > *:not(.card-heading),
+.card-div:focus-within .card-content > *:not(.card-heading) {
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+.card-heading {
+  position: relative;
+  /* multiline er khetre max-content use na kore max-width:100% korte hobe */
+  width: max-content;
+}
+.card-heading::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: var(--clr-accent-400);
+  left: calc(var(--padding) * -1);
+  /* akhane direct -1.5rem dileo hobe */
+  width: calc(100% + var(--padding));
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.card-div:hover .card-heading::after,
+.card-div:focus-within .card-heading::after {
+  transform: scaleX(1);
+}
+.card-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+.card-btn {
+  text-decoration: none;
   display: inline-block;
+  color: #fff;
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+  outline: none;
+  border: none;
 }
-.service-img {
-  transition: transform 0.5s linear;
-}
-.service-img:hover {
-  transform: scale(1.18);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-  filter: brightness(50%);
+.card-btn:hover,
+.card-btn:focus {
+  background-color: var(--clr-neutral-100);
 }

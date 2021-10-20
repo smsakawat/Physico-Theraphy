@@ -7,7 +7,7 @@ import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import { Typography } from "@mui/material";
 const Advantages = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5 my-5">
       <h1 className="text-start my-4">
         Our <span className="fw-bold">Advantages</span>
       </h1>
