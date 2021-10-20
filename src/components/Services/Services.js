@@ -16,7 +16,7 @@ const Services = () => {
           <h1 className="fw-bold  text-center">
             Our <span className="primary-color"> Services</span>
           </h1>
-          <div className=" py-4 text-center mt-2">
+          <div className=" py-2 text-center mt-2">
             <h3>
               We{" "}
               <span className="fw-bold">offer various Physical Services</span>
@@ -25,7 +25,7 @@ const Services = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row  g-5 mt-3  ">
+        <div className="row  g-5">
           {services?.map((service) => (
             <Service key={service.id} service={service}></Service>
           ))}

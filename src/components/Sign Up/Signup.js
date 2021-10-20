@@ -19,8 +19,7 @@ const Signup = () => {
   const history = useHistory();
   // show  success message
   const notify = () => {
-    toast.success("Sign Up Successfull!", {
-      style: { backgroundColor: "black", width: "70%", height: "80%" },
+    toast.success("Welcome in Physico Theraphy!!", {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,

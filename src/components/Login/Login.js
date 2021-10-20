@@ -9,6 +9,7 @@ import "./login.css";
 
 toast.configure();
 const Login = () => {
+  // login states
   const [values, setValues] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const { isLoading, setIsLoading, signInWithEmail, signinWithGoogle } =
@@ -20,7 +21,7 @@ const Login = () => {
 
   const notify = () => {
     toast.success("Login Successfull!", {
-      style: { backgroundColor: "black", width: "70%", height: "80%" },
+      // we can also change the notify by inline styles here
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,

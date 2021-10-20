@@ -27,8 +27,8 @@ const useFirebase = () => {
   const signinWithGoogle = () => {
     setIsLoading(true);
     return signInWithPopup(auth, googleProvider);
-    // aita korci jate user k home'a login er por home page'a redirect korete pare
   };
+  // sign up with email
   const signUpUsingEmailAndPass = (email, password, name) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -52,7 +52,7 @@ const useFirebase = () => {
 
   // show message on logout
   const notify = () => {
-    toast.info("LogOut succesffull!", {
+    toast.info("Logout succesffull!", {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,
@@ -62,6 +62,7 @@ const useFirebase = () => {
       progress: undefined,
     });
   };
+  // logout authentication
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)

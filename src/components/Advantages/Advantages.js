@@ -9,10 +9,10 @@ const Advantages = () => {
   return (
     <div className="container py-5 my-5">
       <h1 className="text-start my-4">
-        Our <span className="fw-bold">Advantages</span>
+        Our <span className="fw-bold primary-color">Advantages</span>
       </h1>
       <div className="d-flex justify-content-between align-items-center advantages">
-        <div className=" p-4 me-1 border  d-flex justify-content-around align-items-center">
+        <div className=" p-4 me-1 border border-secondary  d-flex justify-content-around align-items-center">
           <div className="advantage-icon me-3">
             <HealthAndSafetyIcon style={{ fontSize: 40 }} />
           </div>
@@ -23,7 +23,7 @@ const Advantages = () => {
             </Typography>
           </div>
         </div>
-        <div className="p-4 me-1 border  d-flex justify-content-between align-items-center">
+        <div className="p-4 me-1 border border-secondary  d-flex justify-content-between align-items-center">
           <div className="advantage-icon me-3">
             <GroupIcon style={{ fontSize: 40 }} />
           </div>
@@ -34,7 +34,7 @@ const Advantages = () => {
             </Typography>
           </div>
         </div>
-        <div className=" border p-4 me-1 d-flex justify-content-between align-items-center">
+        <div className=" border border-secondary p-4 me-1 d-flex justify-content-between align-items-center">
           <div className="advantage-icon me-3">
             <VerifiedIcon style={{ fontSize: 40 }} />
           </div>
@@ -46,8 +46,8 @@ const Advantages = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center my-3 advantages">
-        <div className="p-4 me-1 border  d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center my-5 advantages">
+        <div className="p-4 me-1 border border-secondary  d-flex justify-content-between align-items-center">
           <div className="advantage-icon me-3">
             <HealingIcon style={{ fontSize: 40 }} />
           </div>
@@ -58,7 +58,7 @@ const Advantages = () => {
             </Typography>
           </div>
         </div>
-        <div className="p-4 me-1 border  d-flex justify-content-between align-items-center">
+        <div className="p-4 me-1 border border-secondary  d-flex justify-content-between align-items-center">
           <div className="advantage-icon me-3">
             <VerifiedUserIcon style={{ fontSize: 40 }} />
           </div>
@@ -69,7 +69,7 @@ const Advantages = () => {
             </Typography>
           </div>
         </div>
-        <div className=" p-4 me-1 border  d-flex justify-content-between align-items-center">
+        <div className=" p-4 me-1 border border-secondary  d-flex justify-content-between align-items-center">
           <div className="advantage-icon me-3">
             <SchoolIcon style={{ fontSize: 40 }} />
           </div>
