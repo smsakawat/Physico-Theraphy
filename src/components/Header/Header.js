@@ -7,8 +7,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { Button, Typography } from "@mui/material";
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 
@@ -129,39 +128,48 @@ const Header = () => {
             <Nav className="ms-auto">
               <Nav.Link
                 style={{ fontWeight: "bold", paddingRight: 10 }}
-                as={Link}
+                as={NavLink}
                 to="/home"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#9c27b0",
+                }}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 style={{ fontWeight: "bold", paddingRight: 25 }}
-                as={Link}
+                as={NavLink}
                 to="/about"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#9c27b0",
+                }}
               >
                 About Us
               </Nav.Link>
 
               <Nav.Link
                 style={{ fontWeight: "bold", paddingRight: 25 }}
-                as={Link}
+                as={NavLink}
                 to="/blogs"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#9c27b0",
+                }}
               >
                 Blogs
               </Nav.Link>
               <Nav.Link
                 style={{ fontWeight: "bold", paddingRight: 25 }}
-                as={Link}
+                as={NavLink}
                 to="/booking"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#9c27b0",
+                }}
               >
                 Book Now
-              </Nav.Link>
-              <Nav.Link
-                style={{ fontWeight: "bold", paddingRight: 25 }}
-                as={HashLink}
-                to="/home#services"
-              >
-                Services
               </Nav.Link>
 
               <Navbar.Text style={{ margin: "0 10px" }}>

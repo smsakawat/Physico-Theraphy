@@ -5,13 +5,19 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
-  signOut
+  signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import initializeAuthentication from "../Firebase/firebase.init";
 
+// initialize toastify
+toast.configure();
+//initializing firebase
 initializeAuthentication();
 const useFirebase = () => {
+  // autentication states
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
@@ -37,26 +43,37 @@ const useFirebase = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-
-      }
-      else{
+      } else {
         setUser({});
       }
-      setIsLoading(false)
+      setIsLoading(false);
     });
   }, []);
 
+  // show message on logout
+  const notify = () => {
+    toast.info("LogOut succesffull!", {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)
       .then(() => {
+        notify();
         // Sign-out successful.
         setUser({});
       })
       .catch((error) => {})
-      .finally(()=>{
-        setIsLoading(false)
-      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
   return {
     user,

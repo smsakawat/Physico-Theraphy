@@ -12,6 +12,9 @@ const Service = (props) => {
           <p className="card-desc">{description}</p>
           <Link to={`/services/${id}`} className="card-btn">
             Learn More
+            <span className="ms-2">
+              <i class="fas fa-chevron-right"></i>
+            </span>
           </Link>
         </div>
       </div>

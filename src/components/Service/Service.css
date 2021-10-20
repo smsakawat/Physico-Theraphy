@@ -1,7 +1,7 @@
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: rgb(252, 245, 245);
-  --clr-accent-400: #951daa;
+  --clr-accent-400: hsl(142, 90%, 61%);
 }
 *,
 *:before,

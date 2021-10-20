@@ -3,9 +3,12 @@ import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import useAuth from "../../hooks/useAuth";
 import "./Signup.css";
 
+toast.configure();
 const Signup = () => {
   const auth = getAuth();
   const [values, setValues] = useState({ name: "", email: "", password: "" });
@@ -14,13 +17,26 @@ const Signup = () => {
   const [nameError, setNameError] = useState(false);
   // redirecting user after login
   const history = useHistory();
-
+  // show  success message
+  const notify = () => {
+    toast.success("Sign Up Successfull!", {
+      style: { backgroundColor: "black", width: "70%", height: "80%" },
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
   // destructuring from use auth
   const { signinWithGoogle, signUpUsingEmailAndPass } = useAuth();
   // sign up with google
   const handleGoogleSignUP = () => {
     signinWithGoogle()
       .then((result) => {
+        notify();
         history.push("/home");
       })
       .catch((err) => {});
@@ -40,6 +56,7 @@ const Signup = () => {
           updateProfile(auth.currentUser, {
             displayName: values.name,
           }).then(() => {
+            notify();
             history.push("/home");
           });
         })
@@ -118,8 +135,8 @@ const Signup = () => {
               style={{
                 border: "2px solid lightgray",
                 backgroundColor: "transparent",
-                padding: "6px 38px",
-                borderRadius: 24,
+                padding: "6px 16px",
+                borderRadius: 9,
                 color: "gray",
               }}
             >

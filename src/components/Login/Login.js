@@ -2,9 +2,12 @@ import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useHistory, useLocation } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import useAuth from "../../hooks/useAuth";
 import "./login.css";
 
+toast.configure();
 const Login = () => {
   const [values, setValues] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
@@ -14,6 +17,19 @@ const Login = () => {
   const [passError, setPassError] = useState();
   const history = useHistory();
   const location = useLocation();
+
+  const notify = () => {
+    toast.success("Login Successfull!", {
+      style: { backgroundColor: "black", width: "70%", height: "80%" },
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   const redirect_ui = location.state?.from || "/";
 
@@ -28,6 +44,7 @@ const Login = () => {
     }
     signInWithEmail(values.email, values.password)
       .then((result) => {
+        notify();
         setError("");
         history.push(redirect_ui);
 
@@ -42,6 +59,7 @@ const Login = () => {
     setIsLoading(true);
     signinWithGoogle()
       .then((result) => {
+        notify();
         history.push(redirect_ui);
       })
       .catch((error) => {})
@@ -113,8 +131,8 @@ const Login = () => {
             style={{
               border: "2px solid lightgray",
               backgroundColor: "transparent",
-              padding: "6px 38px",
-              borderRadius: 24,
+              padding: "6px 16px",
+              borderRadius: 9,
               color: "gray",
             }}
           >
